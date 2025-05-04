@@ -1,0 +1,11 @@
+@import 'typeface-lora';
+@import 'typeface-poppins';
+@import "tailwindcss";
+
+.Lora{ 
+    font-family: 'Lora , serif';
+ }
+ 
+.Poppins{ 
+    font-family: 'Poppins';
+ }
