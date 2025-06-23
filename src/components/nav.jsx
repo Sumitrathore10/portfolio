@@ -315,7 +315,7 @@ const Nav = () => {
                       className={` flex items-center justify-between px-3 py-2 rounded-xl transition-all duration-300 ${
                         activeSection === item.name
                           ? darkMode
-                            ? 'bg-red-500 text-red-400'
+                            ? 'bg-red-500/50 text-red-400'
                             : 'bg-red-50 text-red-600'
                           : darkMode
                             ? 'text-gray-300 hover:text-white hover:bg-white/10'
