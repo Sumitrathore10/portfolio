@@ -1,11 +1,41 @@
-@import 'typeface-lora';
-@import 'typeface-poppins';
+@import "typeface-lora";
+@import "typeface-poppins";
 @import "tailwindcss";
 
-.Lora{ 
-    font-family: 'Lora , serif';
- }
- 
-.Poppins{ 
-    font-family: 'Poppins';
- }
+html {
+  scroll-behavior: smooth;
+}
+
+.Lora {
+  font-family: "Lora , serif";
+}
+
+.Poppins {
+  font-family: "Poppins";
+}
+
+.glassy {
+  background: rgba(232, 237, 237, 0.2);
+  box-shadow: 0 8px 20px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+}
+
+.glassy2 {
+    background: rgba( 232, 237, 237, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+}
+
+.tech-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.tech-card:hover {
+  transform: rotateY(10deg) rotateX(10deg) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
