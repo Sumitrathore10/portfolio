@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { Moon, Sun, Menu, X, Download, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 
@@ -7,7 +7,6 @@ const Nav = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [activeSection, setActiveSection] = useState("Home");
   const [isScrolled, setIsScrolled] = useState(false);
-  const heroRef = useRef(null);
   const { scrollY } = useScroll();
   
   // Transform values for scroll effects
@@ -263,7 +262,7 @@ const Nav = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.1 }}
               className="fixed inset-0 bg-black/50 backdrop-blur-md z-40 lg:hidden"
               onClick={toggleMenu}
             />
@@ -313,10 +312,10 @@ const Nav = () => {
                         setActiveSection(item.name);
                         toggleMenu();
                       }}
-                      className={`flex items-center justify-between p-4 rounded-xl transition-all duration-300 ${
+                      className={` flex items-center justify-between px-3 py-2 rounded-xl transition-all duration-300 ${
                         activeSection === item.name
                           ? darkMode
-                            ? 'bg-red-500/20 text-red-400'
+                            ? 'bg-red-500 text-red-400'
                             : 'bg-red-50 text-red-600'
                           : darkMode
                             ? 'text-gray-300 hover:text-white hover:bg-white/10'
@@ -326,7 +325,7 @@ const Nav = () => {
                       whileTap={{ scale: 0.98 }}
                     >
                       <div>
-                        <div className="font-medium text-lg">{item.name}</div>
+                        <div className="font-medium text-md">{item.name}</div>
                         <div className={`text-sm ${
                           darkMode ? 'text-gray-400' : 'text-gray-500'
                         }`}>
