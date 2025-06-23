@@ -341,7 +341,7 @@ const HackathonJourney = () => {
 
                   {/* Card Content */}
                   <motion.div
-                    className={`ml-8 rounded-2xl overflow-hidden transition-all duration-500 ${
+                    className={`ml-8 rounded-2xl Poppins overflow-hidden transition-all duration-500 ${
                       darkMode
                         ? "bg-white/5 border border-white/10 hover:bg-white/10 hover:border-red-500/30"
                         : "bg-gray-50 border border-gray-100 hover:bg-white hover:border-red-300/40"
