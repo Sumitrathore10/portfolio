@@ -404,12 +404,12 @@ const ContactPage = () => {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
-              <button className={`flex items-center space-x-2 px-8 py-4 rounded-full font-medium border-2 transition-all duration-300 ${
+              <button href='Hackathons'  className={`flex items-center space-x-2 px-8 py-4 rounded-full font-medium border-2 transition-all duration-300 ${
                 darkMode
                   ? "border-white text-white hover:bg-white hover:text-gray-900"
                   : "border-gray-300 text-gray-700 hover:bg-gray-900 hover:text-white"
               }`}>
-                <ExternalLink className="w-5 h-5" />
+                <div className="w-5 h-5" />
                 <span>View My Journey</span>
               </button>
             </motion.a>

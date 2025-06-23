@@ -158,16 +158,16 @@ const About = () => {
   ];
 
   const tools = [
-    { name: "VS Code", icon: "/public/vscode.png" },
-    { name: "MongoDB", icon: "/public/mongodb.png" },
-    { name: "Express", icon: "/public/Express.png" },
-    { name: "React", icon: "/public/React.png" },
-    { name: "Redux", icon: "/public/redux2.png" },
-    { name: "Linux", icon: "/public/Linux.png" },
-    { name: "Git", icon: "/public/git.png" },
-    { name: "GitHub", icon: "/public/GitHub.png" },
-    { name: "Tailwind", icon: "/public/Tailwind CSS.png" },
-    { name: "Node.js", icon: "/public/Node.js.png" },
+    { name: "VS Code", icon: "https://img.icons8.com/?size=100&id=9OGIyU8hrxW5&format=png&color=000000" },
+    { name: "MongoDB", icon: "https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000" },
+    { name: "Express", icon: "https://img.icons8.com/?size=100&id=kg46nzoJrmTR&format=png&color=000000" },
+    { name: "React", icon: "https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000" },
+    { name: "Redux", icon: "https://img.icons8.com/?size=100&id=b6vIINYN0kfW&format=png&color=000000" },
+    { name: "Linux", icon: "https://img.icons8.com/?size=100&id=tmEqIUErLJVM&format=png&color=000000" },
+    { name: "Git", icon: "https://img.icons8.com/?size=100&id=20906&format=png&color=000000" },
+    { name: "GitHub", icon: "https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000" },
+    { name: "Tailwind", icon: "https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000" },
+    { name: "Node.js", icon: "https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000" },
   ];
 
   return (
