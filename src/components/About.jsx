@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Code, GraduationCap, Briefcase } from "lucide-react";
+import { Code, GraduationCap, Briefcase, PenToolIcon } from "lucide-react";
 import { motion, useScroll, useTransform, useInView } from "framer-motion";
 
 // Animation Variants
@@ -158,16 +158,16 @@ const About = () => {
   ];
 
   const tools = [
-    { name: "VS Code", icon: "https://img.icons8.com/?size=100&id=9OGIyU8hrxW5&format=png&color=000000" },
-    { name: "MongoDB", icon: "https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000" },
-    { name: "Express", icon: "https://img.icons8.com/?size=100&id=kg46nzoJrmTR&format=png&color=000000" },
-    { name: "React", icon: "https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000" },
-    { name: "Redux", icon: "https://img.icons8.com/?size=100&id=b6vIINYN0kfW&format=png&color=000000" },
-    { name: "Linux", icon: "https://img.icons8.com/?size=100&id=tmEqIUErLJVM&format=png&color=000000" },
-    { name: "Git", icon: "https://img.icons8.com/?size=100&id=20906&format=png&color=000000" },
-    { name: "GitHub", icon: "https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000" },
-    { name: "Tailwind", icon: "https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000" },
-    { name: "Node.js", icon: "https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000" },
+    { name: "VS Code", icon: (<img className="w-full h-full object-cover" src="https://img.icons8.com/?size=100&id=9OGIyU8hrxW5&format=png&color=000000" alt="" srcset="" />) },
+    { name: "MongoDB", icon: (<img className="w-full h-full object-cover" src="https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000" alt="" srcset="" /> )},
+    { name: "Express", icon: (<img className="w-full h-full object-cover" src="https://img.icons8.com/?size=100&id=kg46nzoJrmTR&format=png&color=000000" alt="" srcset="" />) },
+    { name: "React", icon: (<img className="w-full h-full object-cover" src="https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000" alt="" srcset="" />) },
+    { name: "Redux", icon: (<img className="w-full h-full object-cover" src="https://img.icons8.com/?size=100&id=b6vIINYN0kfW&format=png&color=000000" alt="" srcset="" /> )},
+    { name: "Linux", icon: (<img className="w-full h-full object-cover" src="https://img.icons8.com/?size=100&id=tmEqIUErLJVM&format=png&color=000000" alt="" srcset="" /> )},
+    { name: "Git", icon: (<img className="w-full h-full object-cover" src="https://img.icons8.com/?size=100&id=20906&format=png&color=000000" alt="" srcset="" /> )},
+    { name: "GitHub", icon: (<img className="w-full h-full object-cover" src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000" alt="" srcset="" />) },
+    { name: "Tailwind", icon: (<img className="w-full h-full object-cover" src="https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000" alt="" srcset="" />) },
+    { name: "Node.js", icon: (<img className="w-full h-full object-cover" src="https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000" alt="" srcset="" /> )},
   ];
 
   return (
@@ -379,7 +379,7 @@ const About = () => {
                     title={tool.name}
                     style={{ transformStyle: 'preserve-3d' }}
                   >
-                    <div className="mb-1 items-center text-2xl"><img className="w-full h-full object-cover" src={tool.icon} alt="" srcset="" /></div>
+                    <div className="mb-1 items-center text-2xl">{tool.icon}</div>
                     <div className={`text-xs text-nowrap font-bold Poppins text-center transition-colors duration-300 ${
                       darkMode ? "text-gray-300" : "text-gray-600"
                     }`}>

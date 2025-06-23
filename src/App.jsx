@@ -12,7 +12,7 @@ import Contact from "./components/Contact.jsx";
 
 const App = () => {
   return (
-    <div className="w-full flex-col flex h-fit bg-gradient-to-br from-[#f8fafafd] via-[#fdfdfdc6] to-[#e4ebf5] text-black">
+    <div className="w-full flex-col overflow-hidden flex h-fit bg-gradient-to-br from-[#f8fafafd] via-[#fdfdfdc6] to-[#e4ebf5] text-black">
       <Nav />
       <Hero />
       <About />

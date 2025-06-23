@@ -119,7 +119,7 @@ const Nav = () => {
       >
         <div className={`mx-4 lg:mx-8 rounded-2xl transition-all duration-500 ${
           darkMode 
-            ? 'bg-gray-900/90 border-gray-700/50' 
+            ? 'bg-black/80 border-gray-700/50' 
             : 'bg-white/90 border-white/20'
         } backdrop-blur-xl border shadow-2xl ${
           isScrolled ? 'shadow-xl' : 'shadow-2xl'
@@ -239,9 +239,9 @@ const Nav = () => {
               {/* Mobile Menu Button */}
               <motion.button
                 onClick={toggleMenu}
-                className={`lg:hidden p-3 rounded-xl transition-all duration-300 ${
+                className={`lg:hidden p-3 Poppins rounded-xl transition-all duration-300 ${
                   darkMode
-                    ? 'bg-white/10 text-white hover:bg-white/20'
+                    ? 'bg-black/80 text-white hover:bg-white/20'
                     : 'bg-gray-900/10 text-gray-700 hover:bg-gray-900/20'
                 }`}
                 whileHover={{ scale: 1.1 }}
@@ -276,14 +276,14 @@ const Nav = () => {
               exit="closed"
               className={`fixed top-4 left-4 right-4 z-50 rounded-2xl shadow-2xl lg:hidden ${
                 darkMode 
-                  ? 'bg-gray-900/95 border-gray-700/50' 
+                  ? 'bg-black/80 border-gray-700/50' 
                   : 'bg-white/95 border-white/20'
               } backdrop-blur-xl border`}
             >
               <div className="p-6">
                 {/* Mobile Header */}
                 <div className="flex items-center justify-between mb-8">
-                  <div className={`text-2xl font-bold font-sans ${
+                  <div className={`text-2xl Poppins font-bold font-sans ${
                     darkMode ? 'text-white' : 'text-gray-900'
                   }`}>
                     Sumit<span className="text-red-500">.</span>
