@@ -20,7 +20,6 @@ const Nav = () => {
   const navItems = [
     { name: "Home", href: "#Home", description: "Welcome" },
     { name: "About", href: "#About", description: "My Story" },
-    { name: "Services", href: "#Services", description: "What I Do" },
     { name: "Projects", href: "#Projects", description: "My Work" },
     { name: "Hackathon", href: "#Hackathons", description: "Competitions" },
     { name: "Contact", href: "#Contacts", description: "Let's Talk" }
