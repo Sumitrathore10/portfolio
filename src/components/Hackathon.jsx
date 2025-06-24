@@ -268,7 +268,7 @@ const HackathonJourney = () => {
         </motion.div>
 
         {/* Stats Section */}
-        <motion.div 
+        {/*<motion.div 
           className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16"
           variants={containerVariants}
           initial="hidden"
@@ -298,7 +298,7 @@ const HackathonJourney = () => {
               </div>
             </motion.div>
           ))}
-        </motion.div>
+        </motion.div>*/}
 
         {/* Timeline */}
         <div className="relative pl-8">
