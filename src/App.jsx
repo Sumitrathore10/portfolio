@@ -16,7 +16,6 @@ const App = () => {
       <Nav />
       <Hero />
       <About />
-      <Service/>
       <Project />
       <HackathonJourney />
       <Contact />
